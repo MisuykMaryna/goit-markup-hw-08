@@ -1,4 +1,18 @@
+.container.mobil__card {
+    position: absolute;
+    width: 480px;
+    height: 796px;
+    top: 0;
+    left: 0;
+    padding: 48px 48px 48px 40px;
+    background-color: var(--color-caption);
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .mobil-menu {
     position: fixed;
     top: 0;
@@ -6,7 +20,6 @@
     display: none;
     width: 100%;
     height: 100%;
-    padding: 48px 48px 48px 40px;
     background-color: var(--color-caption);
     z-index: 1;
 
@@ -24,21 +37,71 @@
     &__icon {
         fill: var(--color-link)
     }
-.container.mobil {
-    position: absolute;
-    width: 480px;
-    height: 796px;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background-color: var(--color-caption);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ &__link {
+color: var(--color-link);
+font-weight: 500;
+font-size: 40px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+  }
+  &__link:hover,
+ .mobil-menu__link:focus {
+      color: var(--accent-color);
+}
+ &__link--current:hover,
+.mobil-menu__link--current:focus {
+     color: var(--accent-color);
+ }
+
+ &__link--current {
+     color: var(--accent-color);
+ }
+ &__list:not(:last-child) {
+  margin-bottom: 32px;
+ }
+.mobil-menu__contact {
+    color: var(--primary-text-color);
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+&__link:hover,
+.mobil-menu__contact:focus {
+    color: var(--accent-color);
+    font-size: 34px;
+}
+&__social-box {
+    display: flex;
+position: absolute;
+    left: 40px;
+    bottom: 48px;
+    }
+&__social {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+   &__social {
+    &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
 }
+
+
+
+}
+
 
