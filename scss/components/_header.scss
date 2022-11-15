@@ -1,0 +1,141 @@
+.header {
+    position: relative;
+    align-items: center;
+    border: 1px solid rgba(236, 236, 236, 1);
+
+
+&__nav {
+    display: flex;
+    align-items: center;
+}
+
+&__logo {
+    padding: 16px 0;
+@media (min-width: 480px) {
+    padding: 25px 0;
+}
+&--color {
+    color: var(--title-text-color);
+}
+}
+&__menu {
+    display: none;
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 50px;
+
+    @media (min-width: 480px) {
+display: flex;
+    }
+}
+&__burger-menu {
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    fill: var(--title-text-color);
+    background-color: var(--color-caption);
+        border: none;
+    @media (min-width: 480px) {
+            display: none;
+        }
+}
+&__link {
+    color: var(--color-link);
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    display: block;
+    padding: 32px 0;
+    margin: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__link:hover,
+&__link:focus {
+    color: var(--accent-color);
+}
+
+&__link--current:hover,
+&__link--current:focus {
+    color: var(--accent-color);
+}
+
+&__link--current {
+    color: var(--accent-color);
+}
+
+&__link--current:hover::after {
+    color: var(--accent-color);
+}
+
+&__link--current:focus::after {
+    color: var(--accent-color);
+}
+
+&__link--current::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    content: "";
+}
+
+&__list {
+    position: relative;
+}
+
+&__contact {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    fill: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__connection+.header__connection {
+    margin-left: 50px;
+}
+
+&__contact:hover,
+.header__contact:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+&__address {
+    display: none;
+    align-items: center;
+    margin-left: auto;
+
+    @media (min-width: 480px) {
+            display: flex;
+        }
+}
+
+&__item {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+&__items {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+}
