@@ -2,6 +2,11 @@
     display: flex;
     gap: 30px;
 
+    @media (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
 
 &__icon {
     @extend %flex-centered;

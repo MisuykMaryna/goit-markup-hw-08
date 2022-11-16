@@ -18,11 +18,14 @@
 }
 
 &__list {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     position: relative;
      
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
 
 &__icon {
@@ -38,6 +41,9 @@
 }
 
 &__item {
+    @media (min-width: 768px) {
     width: 270px;
+
+}
 }
 }
