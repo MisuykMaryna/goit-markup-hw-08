@@ -1,7 +1,13 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+
+@media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
 
 &__list {
     display: flex;
@@ -9,6 +15,11 @@
     padding: 0;
     gap: 30px;
     flex-basis: calc((100% - 60px)/3);
+
+@media (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }
 

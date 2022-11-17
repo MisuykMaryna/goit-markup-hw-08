@@ -23,9 +23,13 @@
 .title {
     color: var(--color-link);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
+
+    @media (min-width: 1199px) {
+    font-size: 36px;
+}
 }

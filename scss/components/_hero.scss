@@ -1,16 +1,55 @@
 .hero {
     background-color: var(--color-fon);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     max-width: 1600px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
+     
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/office.jpg);
+            rgba(47, 48, 58, 0.4)), url("../images/office-mobile.jpg");
+            background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                 rgba(47, 48, 58, 0.4)), url("../images/office-mobile@2x.jpg");
+                }
+@media (min-width:489px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../images/office-tablet.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url("../images/office-tablet@2x.jpg");
+        }
+}
+    
+@media (min-width:769px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url("../images/office.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url("../images/office@2x.jpg");
+    }
+}
+    }  
 
 
 &__title {
