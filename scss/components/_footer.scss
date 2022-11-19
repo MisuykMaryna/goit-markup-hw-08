@@ -145,16 +145,19 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 
     @media screen and (min-width:480px) {
     width:450px;
-    margin-bottom: 20px;
+    
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 20px;
     }
+         @media screen and (min-width:1200px) {
+    width: 358px;
 }
-
+}
 .footer__form {
     display: flex;
 }
@@ -177,7 +180,6 @@
     letter-spacing: 0.06em;
 
     @extend %flex-centered;
-    gap: 10px;
     border: none;
     margin-left: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
