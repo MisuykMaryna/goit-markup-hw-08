@@ -3,7 +3,7 @@
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 1600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;  
      
@@ -19,6 +19,7 @@
                  rgba(47, 48, 58, 0.4)), url("../images/office-mobile@2x.jpg");
                 }
 @media (min-width:489px) {
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)), url("../images/office-tablet.jpg");
         background-repeat: no-repeat;
@@ -34,6 +35,7 @@
 }
     
 @media (min-width:769px) {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),

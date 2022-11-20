@@ -468,7 +468,7 @@ body {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 1600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/office-mobile.jpg");
@@ -485,6 +485,7 @@ body {
 }
 @media (min-width: 489px) {
   .hero {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/office-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/office-tablet.jpg");
     background-repeat: no-repeat;
@@ -500,6 +501,7 @@ body {
 }
 @media (min-width: 769px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/office.jpg");
@@ -1104,6 +1106,13 @@ body {
 
 .container.mobil__card {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1199,9 +1208,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 40px;
-  bottom: 48px;
 }
 
 .mobil-menu__social {
@@ -1215,10 +1221,7 @@ body {
 }
 
 .mobil-menu__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 150px;
+  margin-top: auto;
 }
 
 .mobil-menu__social-blok:not(:last-child) {
@@ -1227,6 +1230,10 @@ body {
 
 .mobil-menu__social-blok:not(:first-child) {
   padding-left: 10px;
+}
+
+.mobil-menu__address {
+  margin-bottom: 60px;
 }
 
 .mobil-menu__nav {
