@@ -1,7 +1,7 @@
 .container-box {
     display: flex;
     align-items: baseline;
-    gap: 86.9px; 
+    gap: 70px; 
 
 
 
@@ -155,7 +155,8 @@
     margin-bottom: 20px;
     }
          @media screen and (min-width:1200px) {
-    width: 358px;
+    width: 350px;
+    margin-bottom: 0;
 }
 }
 .footer__form {
