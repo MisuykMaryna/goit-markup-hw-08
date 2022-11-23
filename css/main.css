@@ -627,6 +627,11 @@ body {
 
 @media (min-width: 768px) {
   .section__item {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .section__item {
     width: 270px;
   }
 }
