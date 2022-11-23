@@ -18,7 +18,9 @@
     line-height: 1.17;
     text-decoration: none;
 
-   
+    @media (min-width: 1199px) {
+    font-size: 26px;
+    }
 }
 .title {
     color: var(--color-link);
