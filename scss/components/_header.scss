@@ -38,7 +38,7 @@ margin-left: 88px;
 }
 &__burger-menu {
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 10px;
     fill: var(--title-text-color);
     background-color: var(--color-caption);
@@ -144,7 +144,7 @@ margin-left: 88px;
 display: none;
 align-items: center;
     }
-    @media (min-width: 768px) and(max-width: 1198px) {
+    @media (min-width: 768px) and (max-width: 1198px) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
